@@ -61,6 +61,9 @@
     <subjectdef keys="review-r"/>
     <subjectdef keys="review-s"/>
     <subjectdef keys="review-t"/>
+    <subjectdef keys="review-aretha"/>
+    <subjectdef keys="review-chenier"/>
+    <subjectdef keys="review-dave-alvin"/>
     <subjectdef keys="2.0"/>
     <subjectdef keys="tc-review"/>
     <subjectdef keys="rendering">
@@ -69,6 +72,10 @@
           expectations" topic into "Rendering expectations" sections of
           individual topics</shortdesc>
       </topicmeta></subjectdef>
+    <subjectdef keys="review-a-2024"/>
+    <!-- Used for an early 2.0 review but not added to scheme,
+      adding later to get clean report from validation tools -->
+    <subjectdef keys="review-1"/>
   </subjectdef>
   <subjectdef keys="values-product">
     <subjectdef keys="DITA-1.3"/>

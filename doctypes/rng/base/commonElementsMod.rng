@@ -192,9 +192,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
     <define name="simpletable">
       <ref name="simpletable.element"/>
     </define>
-    <define name="state">
-      <ref name="state.element"/>
-    </define>
     <define name="stentry">
       <ref name="stentry.element"/>
     </define>
@@ -221,9 +218,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
     </define>
     <define name="ul">
       <ref name="ul.element"/>
-    </define>
-    <define name="unknown">
-      <ref name="unknown.element"/>
     </define>
     <define name="video">
       <ref name="video.element"/>
@@ -355,7 +349,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="text"/>
           <ref name="tm"/>
           <ref name="xref"/>
-          <ref name="state"/>
         </choice>
       </define>
       <define name="basic.block">
@@ -397,7 +390,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="term"/>
           <ref name="text"/>
           <ref name="tm"/>
-          <ref name="state"/>
         </choice>
       </define>
       <define name="basic.ph.noxref">
@@ -416,7 +408,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="term"/>
           <ref name="text"/>
           <ref name="xref"/>
-          <ref name="state"/>
         </choice>
       </define>
       <define name="basic.block.notbl">
@@ -573,12 +564,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="data"/>
         </zeroOrMore>
       </define>
-      <define name="foreign.unknown.incl">
-        <choice>
-          <ref name="foreign"/>
-          <ref name="unknown"/>
-        </choice>
-      </define>
     </div>
     <div>
       <a:documentation>Predefined content model groups</a:documentation>
@@ -588,7 +573,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="basic.block"/>
           <ref name="basic.ph"/>
           <ref name="data.elements.incl"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="txt.incl"/>
         </choice>
       </define>
@@ -598,7 +583,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="basic.ph.noxref"/>
           <ref name="data.elements.incl"/>
           <ref name="draft-comment"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="required-cleanup"/>
           <ref name="image"/>
         </choice>
@@ -609,7 +594,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="basic.ph.noxref"/>
           <ref name="data.elements.incl"/>
           <ref name="draft-comment"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="required-cleanup"/>
           <ref name="image"/>
         </choice>
@@ -620,7 +605,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="basic.ph.noxref.nocite"/>
           <ref name="data.elements.incl"/>
           <ref name="draft-comment"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="required-cleanup"/>
         </choice>
       </define>
@@ -630,7 +615,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="basic.ph"/>
           <ref name="data.elements.incl"/>
           <ref name="draft-comment"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="required-cleanup"/>
         </choice>
       </define>
@@ -640,7 +625,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="basic.block.nopara"/>
           <ref name="basic.ph"/>
           <ref name="data.elements.incl"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="txt.incl"/>
         </choice>
       </define>
@@ -650,7 +635,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="basic.block.nonote"/>
           <ref name="basic.ph"/>
           <ref name="data.elements.incl"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="txt.incl"/>
         </choice>
       </define>
@@ -660,7 +645,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="basic.block.nolq"/>
           <ref name="basic.ph"/>
           <ref name="data.elements.incl"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="txt.incl"/>
         </choice>
       </define>
@@ -670,7 +655,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="basic.block.notbl"/>
           <ref name="basic.ph"/>
           <ref name="data.elements.incl"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="txt.incl"/>
         </choice>
       </define>
@@ -681,7 +666,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="basic.ph"/>
           <ref name="data.elements.incl"/>
           <ref name="draft-comment"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="required-cleanup"/>
         </choice>
       </define>
@@ -690,7 +675,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <text/>
           <ref name="basic.ph"/>
           <ref name="data.elements.incl"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="image"/>
           <ref name="txt.incl"/>
         </choice>
@@ -702,7 +687,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="basic.ph"/>
           <ref name="data.elements.incl"/>
           <ref name="draft-comment"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="required-cleanup"/>
         </choice>
       </define>
@@ -712,7 +697,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="basic.ph"/>
           <ref name="data.elements.incl"/>
           <ref name="draft-comment"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="required-cleanup"/>
           <ref name="image"/>
         </choice>
@@ -723,7 +708,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="basic.block"/>
           <ref name="basic.ph"/>
           <ref name="data.elements.incl"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="txt.incl"/>
         </choice>
       </define>
@@ -732,7 +717,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <text/>
           <ref name="basic.ph"/>
           <ref name="data.elements.incl"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="txt.incl"/>
         </choice>
       </define>
@@ -742,7 +727,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="basic.block.noexample"/>
           <ref name="basic.ph"/>
           <ref name="data.elements.incl"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="title"/>
           <ref name="txt.incl"/>
         </choice>
@@ -752,7 +737,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="basic.block.notbnofg"/>
           <ref name="data.elements.incl"/>
           <ref name="fn"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="include" dita:since="2.0"/>
           <ref name="simpletable"/>
           <ref name="xref"/>
@@ -765,7 +750,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="data.elements.incl"/>
           <ref name="draft-comment"/>
           <ref name="fn"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="required-cleanup"/>
         </choice>
       </define>
@@ -773,7 +758,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
         <choice>
           <text/>
           <ref name="data.elements.incl"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="keyword"/>
           <ref name="term"/>
           <ref name="text"/>
@@ -786,7 +771,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="basic.ph"/>
           <ref name="data.elements.incl"/>
           <ref name="draft-comment"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="image"/>
           <ref name="object"/>
           <ref name="required-cleanup"/>
@@ -800,7 +785,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
           <ref name="basic.block"/>
           <ref name="basic.ph"/>
           <ref name="data.elements.incl"/>
-          <ref name="foreign.unknown.incl"/>
+          <ref name="foreign"/>
           <ref name="txt.incl"/>
         </choice>       
       </define>
@@ -1096,26 +1081,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
         </define>
         <define name="data.attlist" combine="interleave">
           <ref name="data.attributes"/>
-        </define>
-
-      </div>
-      <div>
-        <a:documentation>LONG NAME: Unknown element</a:documentation>
-        <define name="unknown.content">
-          <ref name="any"/>
-        </define>
-        <define name="unknown.attributes">
-          <ref name="univ-atts"/>
-        </define>
-        <define name="unknown.element">
-          <element name="unknown" dita:longName="Unknown">
-            <a:documentation></a:documentation>
-            <ref name="unknown.attlist"/>
-            <ref name="unknown.content"/>
-          </element>
-        </define>
-        <define name="unknown.attlist" combine="interleave">
-          <ref name="unknown.attributes"/>
         </define>
 
       </div>
@@ -2013,28 +1978,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
 
       </div>
       <div>
-        <a:documentation xml:space="preserve">LONG NAME: State</a:documentation>
-        <define name="state.content">
-          <empty/>
-        </define>
-        <define name="state.attributes">
-          <attribute name="name"/>
-          <attribute name="value"/>
-          <ref name="univ-atts"/>
-        </define>
-        <define name="state.element">
-          <element name="state" dita:longName="State">
-            <a:documentation></a:documentation>
-            <ref name="state.attlist"/>
-            <ref name="state.content"/>
-          </element>
-        </define>
-        <define name="state.attlist" combine="interleave">
-          <ref name="state.attributes"/>
-        </define>
-
-      </div>
-      <div>
         <a:documentation>LONG NAME: Image</a:documentation>
         <define name="image.content">
           <optional>
@@ -2198,7 +2141,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
             <ref name="param"/>
           </zeroOrMore>
           <zeroOrMore>
-            <ref name="foreign.unknown.incl"/>
+            <ref name="foreign"/>
           </zeroOrMore>
         </define>
         <define name="object.attributes">
@@ -2412,7 +2355,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
               <text/>
               <ref name="basic.phandblock"/>
               <ref name="data.elements.incl"/>
-              <ref name="foreign.unknown.incl"/>
+              <ref name="foreign"/>
             </choice>
           </zeroOrMore>
         </define>
@@ -2671,7 +2614,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
         <ref name="basic.ph"/>
         <ref name="data.elements.incl"/>
         <ref name="draft-comment"/>
-        <ref name="foreign.unknown.incl"/>
+        <ref name="foreign"/>
         <ref name="required-cleanup"/>
       </choice>
     </zeroOrMore>
@@ -2700,7 +2643,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
       <ref name="fallback"/>
     </optional>
     <zeroOrMore>
-      <ref name="foreign.unknown.incl"/>
+      <ref name="foreign"/>
     </zeroOrMore>
   </define>
   <define name="include.attributes">
@@ -2761,7 +2704,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
         <ref name="media-track"/>
       </zeroOrMore>
       <zeroOrMore>
-        <ref name="foreign.unknown.incl"/>
+        <ref name="foreign"/>
       </zeroOrMore>
     </define>
     <define name="audio.attributes">
@@ -2860,7 +2803,7 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
         <ref name="media-track"/>
       </zeroOrMore>
       <zeroOrMore>
-        <ref name="foreign.unknown.incl"/>
+        <ref name="foreign"/>
       </zeroOrMore>
     </define>
     <define name="video.attributes">
@@ -3312,11 +3255,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
         <attribute name="class" a:defaultValue="- topic/sli "/>
       </optional>
     </define>
-    <define name="state.attlist" combine="interleave">
-      <optional>
-        <attribute name="class" a:defaultValue="- topic/state "/>
-      </optional>
-    </define>
     <define name="stentry.attlist" combine="interleave">
       <optional>
         <attribute name="class" a:defaultValue="- topic/stentry "/>
@@ -3355,11 +3293,6 @@ PUBLIC "-//OASIS//ELEMENTS DITA 2.0 Common Elements//EN"
     <define name="ul.attlist" combine="interleave">
       <optional>
         <attribute name="class" a:defaultValue="- topic/ul "/>
-      </optional>
-    </define>
-    <define name="unknown.attlist" combine="interleave">
-      <optional>
-        <attribute name="class" a:defaultValue="- topic/unknown "/>
       </optional>
     </define>
     <define name="video.attlist" combine="interleave">

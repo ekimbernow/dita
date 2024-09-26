@@ -55,8 +55,7 @@
                %term; |
                %text; |
                %tm; |
-               %xref; |
-               %state;"
+               %xref;"
 >
 <!ENTITY % basic.block
               "%audio; |
@@ -88,8 +87,7 @@
                %q; |
                %term; |
                %text; |
-               %tm; |
-               %state;"
+               %tm;"
 >
 <!ENTITY % basic.ph.noxref
               "%basic.ph.noxref.nocite; |
@@ -103,8 +101,7 @@
                %q; |
                %term; |
                %text; |
-               %xref; |
-               %state;"
+               %xref;"
 >
 <!ENTITY % basic.block.notbl
               "%audio; |
@@ -239,16 +236,12 @@
 <!ENTITY % data.elements.incl
               "%data;"
 >
-<!ENTITY % foreign.unknown.incl
-              "%foreign; |
-               %unknown;"
->
 <!ENTITY % listitem.cnt
               "#PCDATA |
                %basic.block; |
                %basic.ph; |
                %data.elements.incl; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %txt.incl;"
 >
 <!ENTITY % title.cnt
@@ -256,7 +249,7 @@
                %basic.ph.noxref; |
                %data.elements.incl; |
                %draft-comment; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %required-cleanup; |
                %image;"
 >
@@ -265,7 +258,7 @@
                %basic.ph.noxref; |
                %data.elements.incl; |
                %draft-comment; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %required-cleanup; |
                %image;"
 >
@@ -274,7 +267,7 @@
                %basic.ph.noxref.nocite; |
                %data.elements.incl; |
                %draft-comment; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %required-cleanup;"
 >
 <!ENTITY % shortquote.cnt
@@ -282,7 +275,7 @@
                %basic.ph; |
                %data.elements.incl; |
                %draft-comment; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %required-cleanup;"
 >
 <!ENTITY % para.cnt
@@ -290,7 +283,7 @@
                %basic.block.nopara; |
                %basic.ph; |
                %data.elements.incl; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %txt.incl;"
 >
 <!ENTITY % note.cnt
@@ -298,7 +291,7 @@
                %basic.block.nonote; |
                %basic.ph; |
                %data.elements.incl; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %txt.incl;"
 >
 <!ENTITY % longquote.cnt
@@ -306,7 +299,7 @@
                %basic.block.nolq; |
                %basic.ph; |
                %data.elements.incl; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %txt.incl;"
 >
 <!ENTITY % tblcell.cnt
@@ -314,7 +307,7 @@
                %basic.block.notbl; |
                %basic.ph; |
                %data.elements.incl; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %txt.incl;"
 >
 <!ENTITY % desc.cnt
@@ -323,14 +316,14 @@
                %basic.ph; |
                %data.elements.incl; |
                %draft-comment; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %required-cleanup;"
 >
 <!ENTITY % ph.cnt
               "#PCDATA |
                %basic.ph; |
                %data.elements.incl; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %image; |
                %txt.incl;"
 >
@@ -340,7 +333,7 @@
                %basic.ph; |
                %data.elements.incl; |
                %draft-comment; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %required-cleanup;"
 >
 <!ENTITY % term.cnt
@@ -348,7 +341,7 @@
                %basic.ph; |
                %data.elements.incl; |
                %draft-comment; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %required-cleanup; |
                %image;"
 >
@@ -357,14 +350,14 @@
                %basic.block; |
                %basic.ph; |
                %data.elements.incl; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %txt.incl;"
 >
 <!ENTITY % pre.cnt
               "#PCDATA |
                %basic.ph; |
                %data.elements.incl; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %txt.incl;"
 >
 <!ENTITY % example.cnt
@@ -372,7 +365,7 @@
                %basic.block.noexample; |
                %basic.ph; |
                %data.elements.incl; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %title; |
                %txt.incl;"
 >
@@ -380,7 +373,7 @@
               "%basic.block.notbnofg; |
                %data.elements.incl; |
                %fn; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %include; |
                %simpletable; |
                %xref;"
@@ -391,13 +384,13 @@
                %data.elements.incl; |
                %draft-comment; |
                %fn; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %required-cleanup;"
 >
 <!ENTITY % words.cnt
               "#PCDATA |
                %data.elements.incl; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %keyword; |
                %term; |
                %text;"
@@ -408,7 +401,7 @@
                %basic.ph; |
                %data.elements.incl; |
                %draft-comment; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %image; |
                %object; |
                %required-cleanup; |
@@ -420,7 +413,7 @@
                %basic.block; |
                %basic.ph; |
                %data.elements.incl; |
-               %foreign.unknown.incl; |
+               %foreign; |
                %txt.incl;"
 >
 <!ENTITY % frame-expanse-atts
@@ -624,17 +617,6 @@
 >
 <!ELEMENT  data %data.content;>
 <!ATTLIST  data %data.attributes;>
-
-
-<!--                    LONG NAME: Unknown                         -->
-<!ENTITY % unknown.content
-                       "ANY "
->
-<!ENTITY % unknown.attributes
-              "%univ-atts;"
->
-<!ELEMENT  unknown %unknown.content;>
-<!ATTLIST  unknown %unknown.attributes;>
 
 
 <!--                    LONG NAME: Foreign                         -->
@@ -1106,23 +1088,6 @@
 <!ELEMENT  tm %tm.content;>
 <!ATTLIST  tm %tm.attributes;>
 
-<!--                    LONG NAME: State                           -->
-<!ENTITY % state.content
-                       "EMPTY"
->
-<!ENTITY % state.attributes
-              "name
-                          CDATA
-                                    #REQUIRED
-               value
-                          CDATA
-                                    #REQUIRED
-               %univ-atts;"
->
-<!ELEMENT  state %state.content;>
-<!ATTLIST  state %state.attributes;>
-
-
 <!--                    LONG NAME: Image Data                      -->
 <!ENTITY % image.content
                        "((%alt;)?,
@@ -1175,7 +1140,7 @@
 <!ENTITY % include.content
                        "((%data.elements.incl;)*,
                          (%fallback;)?,
-                         (%foreign.unknown.incl;)*)"
+                         (%foreign;)*)"
 >
 <!ENTITY % include.attributes
               "href
@@ -1253,7 +1218,7 @@
                          (%longdescref;)?,
                          (%fallback;)?,
                          (%param;)*,
-                         (%foreign.unknown.incl;)*)"
+                         (%foreign;)*)"
 >
 <!ENTITY % object.attributes
               "data
@@ -1295,7 +1260,7 @@
                          %basic.ph; |
                          %data.elements.incl; |
                          %draft-comment; |
-                         %foreign.unknown.incl; |
+                         %foreign; |
                          %required-cleanup;)*"
 >
 <!ENTITY % fallback.attributes
@@ -1397,7 +1362,7 @@
                        "(#PCDATA |
                          %basic.phandblock; |
                          %data.elements.incl; |
-                         %foreign.unknown.incl;)*"
+                         %foreign;)*"
 >
 <!ENTITY % draft-comment.attributes
               "author
@@ -1548,7 +1513,7 @@
                          (%fallback;)?,
                          (%media-source;)*,
                          (%media-track;)*,
-                         (%foreign.unknown.incl;)*)"
+                         (%foreign;)*)"
 >
 <!ENTITY % audio.attributes
               "autoplay
@@ -1603,7 +1568,7 @@
                          (%video-poster;)?,
                          (%media-source;)*,
                          (%media-track;)*,
-                         (%foreign.unknown.incl;)*)"
+                         (%foreign;)*)"
 >
 <!ENTITY % video.attributes
               "autoplay
@@ -1797,7 +1762,6 @@
 <!ATTLIST  simpletable    class CDATA "- topic/simpletable ">
 <!ATTLIST  sl             class CDATA "- topic/sl "         >
 <!ATTLIST  sli            class CDATA "- topic/sli "        >
-<!ATTLIST  state          class CDATA "- topic/state "      >
 <!ATTLIST  stentry        class CDATA "- topic/stentry "    >
 <!ATTLIST  sthead         class CDATA "- topic/sthead "     >
 <!ATTLIST  strow          class CDATA "- topic/strow "      >
@@ -1807,7 +1771,6 @@
 <!ATTLIST  titlealt       class CDATA "- topic/titlealt "   >
 <!ATTLIST  tm             class CDATA "- topic/tm "         >
 <!ATTLIST  ul             class CDATA "- topic/ul "         >
-<!ATTLIST  unknown        class CDATA "- topic/unknown "    >
 <!ATTLIST  video          class CDATA "- topic/video "      >
 <!ATTLIST  video-poster   class CDATA "- topic/video-poster " >
 <!ATTLIST  xref           class CDATA "- topic/xref "       >
